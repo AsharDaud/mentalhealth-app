@@ -29,40 +29,40 @@ model = joblib.load(model_path)
 
 questions = {
     'anx1': "Dari skala dibawah ini, Seberapa sering anda merasa gugup, gelisah / tegang?",
-    'bpl1': "Dari skala di bawah ini, Seberapa sering anda merasa sangat bahagia, antusias, ataupun terlalu bersemangat?",
-    'dpr1': "Dari skala di bawah ini, Seberapa sering anda merasa sangat sensitif, mudah marah, tersinggung / frustasi dan cenderung menutup diri dari lingkungan?",
-    'eat1': "Dari skala di bawah ini, Seberapa sering anda sering memuntahkan kembali makanan yang telah anda makan?",
-
     'anx2': "Dari skala di bawah ini, Seberapa sering anda merasa sulit mengendalikan rasa khawatir / kecemasan?",
-    'bpl2': "Dari skala di bawah ini, Seberapa sering anda merasa sangat percaya diri, penting, berbakat, ataupun kuat?",
-    'dpr2': "Dari skala di bawah ini, Seberapa sering anda merasa tidak ada ketertarikan, minat / motivasi untuk melakukan apapun dan memiliki suasana hati yang buruk?",
-    'eat2': "Dari skala di bawah ini, Seberapa sering anda merasa sering menghindari rasa lapar karena terobsesi kurus?",
-
     'anx3': "Dari skala di bawah ini, Seberapa sering anda berkeringat dingin / berkeringat berlebihan dan gemetaran?",
-    'bpl3': "Dari skala di bawah ini,  Seberapa sering anda merasa memiliki rasa percaya diri yang berlebihan, harga diri yang melambung ataupun lebih banyak bicara daripada biasanya?",
-    'dpr3': "Dari skala di bawah ini, Seberapa sering anda merasa putus asa atau pesimis?",
-    'eat3': "Dari skala di bawah ini, Seberapa sering anda merasa sering mengonsumsi makanan dalam jumlah banyak, makan dengan sangat cepat dan bahkan tetap makan ketika tidak lapar secara fisik?",
-
     'anx4': "Dari skala di bawah ini, Seberapa sering anda merasa mengalami detak jantung yang meningkat / bernafas dengan cepat?",
+
+    'bpl1': "Dari skala di bawah ini, Seberapa sering anda merasa sangat bahagia, antusias, ataupun terlalu bersemangat?",
+    'bpl2': "Dari skala di bawah ini, Seberapa sering anda merasa sangat percaya diri, penting, berbakat, ataupun kuat?",
+    'bpl3': "Dari skala di bawah ini,  Seberapa sering anda merasa memiliki rasa percaya diri yang berlebihan, harga diri yang melambung ataupun lebih banyak bicara daripada biasanya?",
     'bpl4': "Dari skala di bawah ini,  Seberapa sering anda merasa sangat sedih, putus asa atau merasa diri sendiri tidak berharga dan merasa bersalah yang berlebihan?",
+
+    'dpr1': "Dari skala di bawah ini, Seberapa sering anda merasa sangat sensitif, mudah marah, tersinggung / frustasi dan cenderung menutup diri dari lingkungan?",
+    'dpr2': "Dari skala di bawah ini, Seberapa sering anda merasa tidak ada ketertarikan, minat / motivasi untuk melakukan apapun dan memiliki suasana hati yang buruk?",
+    'dpr3': "Dari skala di bawah ini, Seberapa sering anda merasa putus asa atau pesimis?",
     'dpr4': "Dari skala di bawah ini, Seberapa sering anda merasa pernah timbul ide untuk menyakiti diri sendiri atau percobaan bunuh diri?",
+
+    'eat1': "Dari skala di bawah ini, Seberapa sering anda sering memuntahkan kembali makanan yang telah anda makan?",
+    'eat2': "Dari skala di bawah ini, Seberapa sering anda merasa sering menghindari rasa lapar karena terobsesi kurus?",
+    'eat3': "Dari skala di bawah ini, Seberapa sering anda merasa sering mengonsumsi makanan dalam jumlah banyak, makan dengan sangat cepat dan bahkan tetap makan ketika tidak lapar secara fisik?",
     'eat4': "Dari skala di bawah ini, Seberapa sering anda sering merasa jijik, depresi, malu, kesal, atau bersalah pada diri sendiri setelah makan?",
 
     'ocd1': "Dari skala di bawah ini, Seberapa sering anda merasa sering memeriksa pintu apakah sudah dikunci ataupun mengecek kompor sudah dimatikan secara berkali - kali?",
-    'ptsd1': "Dari skala di bawah ini, Seberapa sering anda merasa sering munculnya ingatan pada peristiwa traumatis?",
-    'skizo1': "Dari skala di bawah ini, Seberapa sering anda pernah merasa berhalusinasi, sering kali berbentuk bayangan atau suara-suara yang tidak nyata?",
-
     'ocd2': "Dari skala di bawah ini, Seberapa sering anda merasa stres yang berlebihan saat benda-benda tersusun secara tidak teratur atau tidak menghadap ke arah tertentu / tidak simetris?",
-    'ptsd2': "Dari skala di bawah ini, Seberapa sering anda cenderung menghindari tempat atau hal-hal yang berkaitan dengan kejadian traumatis?",
-    'skizo2': "Dari skala di bawah ini, Seberapa sering anda pernah merasa mengalami Delusi, contohnya menganggap bahwa dirinya sedang dikejar-kejar orang atau organisasi tertentu?",
-
     'ocd3': "Dari skala di bawah ini, Seberapa sering anda merasa sering menyusun barang-barang agar menghadap ke arah yang sama?",
-    'ptsd3': "Dari skala di bawah ini, Seberapa sering anda merasa sering bermimpi buruk yang berkaitan dengan kejadian traumatis tersebut?",
-    'skizo3': "Dari skala di bawah ini, Seberapa sering anda merasa mengalami perubahan perilaku dan cara bicara menjadi tidak teratur (meracau)?",
-
     'ocd4': "Dari skala di bawah ini, Seberapa sering anda merasa sering mencuci tangan berkali - kali sampai kulit lecet karena merasa masih kotor?",
+
+    'ptsd1': "Dari skala di bawah ini, Seberapa sering anda merasa sering munculnya ingatan pada peristiwa traumatis?",
+    'ptsd2': "Dari skala di bawah ini, Seberapa sering anda cenderung menghindari tempat atau hal-hal yang berkaitan dengan kejadian traumatis?",
+    'ptsd3': "Dari skala di bawah ini, Seberapa sering anda merasa sering bermimpi buruk yang berkaitan dengan kejadian traumatis tersebut?",
     'ptsd4': "Dari skala di bawah ini, Seberapa sering anda merasa  mudah terkejut, takut atau mengalami keadaan emosional negatif yang terus-menerus?",
+
+    'skizo1': "Dari skala di bawah ini, Seberapa sering anda pernah merasa berhalusinasi, sering kali berbentuk bayangan atau suara-suara yang tidak nyata?",
+    'skizo2': "Dari skala di bawah ini, Seberapa sering anda pernah merasa mengalami Delusi, contohnya menganggap bahwa dirinya sedang dikejar-kejar orang atau organisasi tertentu?",
+    'skizo3': "Dari skala di bawah ini, Seberapa sering anda merasa mengalami perubahan perilaku dan cara bicara menjadi tidak teratur (meracau)?",
     'skizo4': "Dari skala di bawah ini, Seberapa sering anda merasa Kurangnya emosi atau ekspresi (tidak melakukan kontak mata, tidak mengubah ekspresi wajah atau berbicara dengan nada monoton)?",
+
 }
 
 if 'responses' not in st.session_state:

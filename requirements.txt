@@ -1,0 +1,7 @@
+joblib==1.4.2
+pandas==2.2.2
+pydeck==0.9.1
+Requests==2.32.3
+scikit_learn==1.5.1
+streamlit==1.35.0
+streamlit_lottie==0.0.5

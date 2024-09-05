@@ -13,15 +13,15 @@ st.set_page_config(
 st.title("Home")
 st.divider()
 
-# def load_lottiefile(filepath: str):
-#     with open(filepath, "r") as f:
-#         return json.load(f)
+def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
 
-# lottie_animation = load_lottiefile("img/animation.json")
+lottie_animation = load_lottiefile("img/animation.json")
 
 # Display animation
-# if lottie_animation:
-#     st_lottie(lottie_animation, height=300, key="mental_health")
+if lottie_animation:
+    st_lottie(lottie_animation, height=300, key="mental_health")
 
 st.write("# Welcome to the Mental Health Identification System")
 st.write(

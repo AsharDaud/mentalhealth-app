@@ -360,36 +360,43 @@ if identify_button:
                                 Orang harus bekerja sama dengan penyedia layanan kesehatan mereka untuk menemukan obat atau kombinasi obat terbaik dan dosis yang tepat.
                                 """)
 
-                        elif condition == "Skizophrenia":
+                        elif condition == "ADHD":
                             st.markdown("""
-                            **Skizofrenia** adalah gangguan mental serius yang mempengaruhi cara seseorang berpikir, merasakan, dan berperilaku. 
-                            Orang dengan skizofrenia mungkin tampak seperti kehilangan kontak dengan kenyataan dan dapat mengalami halusinasi, delusi, serta kesulitan dalam berpikir dan konsentrasi.
+                            **Attention-deficit/hyperactivity disorder (ADHD)** atau gangguan pemusatan perhatian/hiperaktivitas ditandai oleh pola terus-menerus dari kurangnya perhatian dan/atau hiperaktivitas-impulsivitas yang mengganggu fungsi atau perkembangan seseorang. Orang dengan ADHD mengalami pola gejala berikut:
+                                - **Inattention / Kurangnya perhatian** berarti seseorang mungkin kesulitan untuk tetap fokus pada tugas, mempertahankan konsentrasi, dan tetap terorganisir. Masalah-masalah ini bukan karena pembangkangan atau kurangnya pemahaman.
+                                - **Hyperactivity / Hiperaktivitas** berarti seseorang tampak selalu bergerak, bahkan dalam situasi yang tidak tepat, atau terlalu sering gelisah, mengetuk, atau berbicara. Pada orang dewasa, hiperaktivitas dapat berarti gelisah yang ekstrem atau berbicara terlalu banyak.
+                                - **Impulsivity / Impulsivitas**  berarti seseorang mungkin bertindak tanpa berpikir atau kesulitan mengendalikan diri. Impulsivitas juga dapat mencakup keinginan untuk mendapatkan imbalan secara instan atau ketidakmampuan menunda kepuasan. Orang yang impulsif mungkin sering menyela orang lain atau membuat keputusan penting tanpa mempertimbangkan konsekuensi jangka panjang.
                             """)
                             
-                            with st.expander("**Rekomendasi untuk Skizophrenia**", expanded=False):
+                            with st.expander("**Rekomendasi untuk ADHD**", expanded=False):
                                 st.markdown("""
-                                #### Antipsychotic medications
-                                Obat antipsikotik dapat membantu membuat gejala psikotik kurang intens dan kurang sering. Obat-obatan ini biasanya diminum setiap hari dalam bentuk pil atau cairan. Beberapa obat antipsikotik diberikan sebagai suntikan satu atau dua kali sebulan.\n
-                                Jika gejala seseorang tidak membaik dengan obat antipsikotik biasa, mereka mungkin akan diberikan clozapine. Orang yang mengonsumsi clozapine harus menjalani tes darah rutin untuk memeriksa efek samping yang berpotensi berbahaya yang terjadi pada 1-2% pasien.\n
-                                Orang merespons obat antipsikotik dengan cara yang berbeda. Penting untuk melaporkan setiap efek samping kepada penyedia layanan kesehatan. Banyak orang yang mengonsumsi obat antipsikotik mengalami efek samping seperti kenaikan berat badan, mulut kering, gelisah, dan kantuk ketika mereka mulai mengonsumsi obat-obatan ini. Beberapa efek samping ini mungkin hilang seiring waktu, sementara yang lain mungkin bertahan.\n
+                                #### Medication
+                                Bagi banyak orang, obat ADHD dapat mengurangi hiperaktivitas dan impulsivitas serta meningkatkan kemampuan mereka untuk fokus, bekerja, dan belajar. Terkadang, beberapa jenis obat atau dosis yang berbeda perlu dicoba sebelum menemukan yang paling tepat bagi seseorang. Siapa pun yang mengonsumsi obat ini harus dipantau secara ketat oleh dokter yang meresepkannya.\n
+                                **Stimulan**. Jenis obat yang paling umum digunakan untuk mengobati ADHD disebut "stimulan." Meskipun tampaknya tidak biasa mengobati ADHD dengan obat yang dianggap sebagai stimulan, obat ini bekerja dengan meningkatkan kadar dopamin dan norepinefrin di otak, yang memainkan peran penting dalam proses berpikir dan perhatian.\n
+                                Di bawah pengawasan medis, obat stimulan dianggap aman. Namun, seperti semua obat, mereka dapat memiliki efek samping, terutama jika disalahgunakan atau dikonsumsi melebihi dosis yang diresepkan. Oleh karena itu, penyedia layanan kesehatan harus memantau bagaimana seseorang bereaksi terhadap obat tersebut.\n
+                                **Non-stimulan**. Beberapa obat ADHD lainnya adalah non-stimulan. Obat ini membutuhkan waktu lebih lama untuk mulai bekerja dibandingkan stimulan, tetapi juga dapat meningkatkan fokus, perhatian, dan mengurangi impulsivitas pada seseorang dengan ADHD. Dokter mungkin meresepkan obat non-stimulan ketika seseorang mengalami efek samping yang mengganggu dari stimulan, ketika stimulan tidak efektif, atau dalam kombinasi dengan stimulan untuk meningkatkan efektivitas.
                                 
-                                #### Psychosocial treatments
-                                Perawatan psikososial membantu orang menemukan solusi untuk tantangan sehari-hari dan mengelola gejala saat bersekolah, bekerja, dan menjalin hubungan. Perawatan ini sering digunakan bersama dengan obat antipsikotik. Orang yang berpartisipasi dalam perawatan psikososial rutin cenderung tidak mengalami gejala kambuh atau dirawat di rumah sakit.\n
-                                Contoh perawatan semacam ini meliputi jenis psikoterapi seperti terapi perilaku kognitif, pelatihan keterampilan perilaku, pekerjaan dengan dukungan, dan intervensi perbaikan kognitif.
+                                
+                                #### Psychotherapy and psychosocial interventions
+                                Beberapa intervensi psikososial khusus telah terbukti membantu individu dengan ADHD dan keluarga mereka dalam mengelola gejala serta meningkatkan fungsi sehari-hari.\n
+                                Bagi anak usia sekolah, frustrasi, rasa bersalah, dan kemarahan mungkin telah menumpuk dalam keluarga sebelum anak didiagnosis. Orang tua dan anak mungkin memerlukan bantuan khusus untuk mengatasi perasaan negatif tersebut. Profesional kesehatan mental dapat memberikan edukasi kepada orang tua tentang ADHD dan dampaknya terhadap keluarga. Mereka juga akan membantu anak dan orang tuanya mengembangkan keterampilan, sikap, dan cara baru dalam berhubungan satu sama lain.\n
+                                Semua jenis terapi untuk anak-anak dan remaja dengan ADHD memerlukan peran aktif orang tua. Psikoterapi yang hanya melibatkan sesi perawatan individu dengan anak (tanpa keterlibatan orang tua) tidak efektif untuk mengelola gejala dan perilaku ADHD. Jenis perawatan ini lebih mungkin efektif untuk mengobati gejala kecemasan atau depresi yang mungkin terjadi bersamaan dengan ADHD.\n
+                                
+                                **Behavioral therapy** adalah jenis psikoterapi yang bertujuan membantu seseorang mengubah perilakunya. Terapi ini mungkin melibatkan bantuan praktis, seperti membantu mengatur tugas atau menyelesaikan pekerjaan sekolah, atau menangani peristiwa emosional yang sulit. Terapi perilaku juga mengajarkan seseorang cara untuk:
+                                    - Memantau perilaku mereka sendiri
+                                    - Memberikan pujian atau hadiah pada diri sendiri atas tindakan yang diinginkan, seperti mengendalikan amarah atau berpikir sebelum bertindak
+                                Orang tua, guru, dan anggota keluarga juga dapat memberikan umpan balik tentang perilaku tertentu dan membantu menetapkan aturan yang jelas, daftar tugas, serta rutinitas yang terstruktur untuk membantu seseorang mengendalikan perilakunya. Terapis juga dapat mengajarkan keterampilan sosial kepada anak-anak, seperti bagaimana menunggu giliran, berbagi mainan, meminta bantuan, atau merespons ejekan. Belajar membaca ekspresi wajah dan nada suara orang lain, serta bagaimana merespons secara tepat, juga dapat menjadi bagian dari pelatihan keterampilan sosial.
 
-                                #### Education and support
-                                Program pendidikan dapat membantu keluarga dan teman mempelajari gejala skizofrenia, pilihan pengobatan, dan strategi untuk membantu orang yang dicintai dengan penyakit ini. Program-program ini dapat membantu teman dan keluarga mengelola kesusahan mereka, meningkatkan keterampilan penanganannya sendiri, dan memperkuat kemampuan mereka untuk memberikan dukungan.
+                                **Cognitive behavioral therapy** 
+                                            membantu seseorang belajar bagaimana menyadari dan menerima pikiran serta perasaan mereka sendiri untuk meningkatkan fokus dan konsentrasi. Terapis juga mendorong orang dengan ADHD untuk beradaptasi dengan perubahan hidup yang datang bersama pengobatan, seperti berpikir sebelum bertindak atau menahan dorongan untuk mengambil risiko yang tidak perlu.
 
-                                #### Coordinated specialty care
-                                Program perawatan khusus terkoordinasi / Coordinated specialty care (CSC) adalah program yang berfokus pada pemulihan bagi orang dengan episode psikosis pertama, tahap awal skizofrenia. Penyedia layanan kesehatan dan spesialis bekerja sama sebagai tim untuk menyediakan CSC, yang meliputi psikoterapi, pengobatan, manajemen kasus, dukungan pekerjaan dan pendidikan, serta pendidikan dan dukungan keluarga. Tim perawatan bekerja sama dengan individu untuk membuat keputusan perawatan, melibatkan anggota keluarga sebanyak mungkin.\n
-                                Dibandingkan dengan perawatan biasa, CSC lebih efektif dalam mengurangi gejala, meningkatkan kualitas hidup, dan meningkatkan keterlibatan dalam pekerjaan atau sekolah.
+                                **Family and marital therapy** dapat membantu anggota keluarga dan pasangan menemukan cara produktif untuk menangani perilaku yang mengganggu, mendorong perubahan perilaku, dan memperbaiki interaksi dengan orang yang memiliki ADHD.
 
-                                #### Assertive community treatment
-                                Perawatan komunitas asertif / Assertive community treatment (ACT) dirancang khusus untuk orang dengan skizofrenia yang kemungkinan besar akan mengalami beberapa kali rawat inap atau tunawisma. ACT biasanya diberikan oleh tim penyedia layanan kesehatan yang bekerja sama untuk memberikan perawatan kepada pasien di komunitas.
+                                **Parenting skills training (behavioral parent management training)** mengajarkan orang tua keterampilan untuk mendorong dan memberi penghargaan atas perilaku positif pada anak-anak mereka. Orang tua diajarkan untuk menggunakan sistem hadiah dan konsekuensi untuk mengubah perilaku anak, memberikan umpan balik positif dan segera untuk perilaku yang ingin mereka dorong, serta mengabaikan atau mengarahkan perilaku yang ingin mereka cegah. 
 
-                                #### Treatment for drug and alcohol misuse
-                                Orang dengan skizofrenia mungkin juga mengalami masalah dengan narkoba dan alkohol. Program perawatan yang mencakup perawatan untuk skizofrenia dan penyalahgunaan zat penting untuk pemulihan karena penyalahgunaan zat dapat mengganggu pengobatan untuk skizofrenia.
+                                **Stress management techniques** dapat bermanfaat bagi orang tua anak dengan ADHD dengan meningkatkan kemampuan mereka untuk menghadapi frustrasi sehingga mereka dapat merespons perilaku anak mereka dengan tenang.
 
+                                **Support groups** dapat membantu orang tua dan keluarga terhubung dengan orang lain yang memiliki masalah dan kekhawatiran serupa. Kelompok-kelompok ini seringkali bertemu secara berkala untuk berbagi frustrasi dan keberhasilan, bertukar informasi tentang spesialis dan strategi yang direkomendasikan, serta berbicara dengan para ahli.
                                 """)
 
                 # Display the descriptions
@@ -397,7 +404,7 @@ if identify_button:
                     st.markdown(description)
 
                 # Menampilkan pesan peringatan sekali di akhir
-                if descriptions:
+                if descriptions: 
                     st.warning("**Perlu diingat bahwa sistem ini merupakan alat identifikasi dini dan bukan acuan untuk melakukan diagnosis kesehatan mental. Sebaiknya anda menemui seorang profesional untuk mengetahui lebih lanjut terkait kondisi mental anda.**")
 
 if reset_button:

@@ -387,8 +387,7 @@ if identify_button:
                                     - Memberikan pujian atau hadiah pada diri sendiri atas tindakan yang diinginkan, seperti mengendalikan amarah atau berpikir sebelum bertindak
                                 Orang tua, guru, dan anggota keluarga juga dapat memberikan umpan balik tentang perilaku tertentu dan membantu menetapkan aturan yang jelas, daftar tugas, serta rutinitas yang terstruktur untuk membantu seseorang mengendalikan perilakunya. Terapis juga dapat mengajarkan keterampilan sosial kepada anak-anak, seperti bagaimana menunggu giliran, berbagi mainan, meminta bantuan, atau merespons ejekan. Belajar membaca ekspresi wajah dan nada suara orang lain, serta bagaimana merespons secara tepat, juga dapat menjadi bagian dari pelatihan keterampilan sosial.
 
-                                **Cognitive behavioral therapy** 
-                                            membantu seseorang belajar bagaimana menyadari dan menerima pikiran serta perasaan mereka sendiri untuk meningkatkan fokus dan konsentrasi. Terapis juga mendorong orang dengan ADHD untuk beradaptasi dengan perubahan hidup yang datang bersama pengobatan, seperti berpikir sebelum bertindak atau menahan dorongan untuk mengambil risiko yang tidak perlu.
+                                **Cognitive behavioral therapy** membantu seseorang belajar bagaimana menyadari dan menerima pikiran serta perasaan mereka sendiri untuk meningkatkan fokus dan konsentrasi. Terapis juga mendorong orang dengan ADHD untuk beradaptasi dengan perubahan hidup yang datang bersama pengobatan, seperti berpikir sebelum bertindak atau menahan dorongan untuk mengambil risiko yang tidak perlu.
 
                                 **Family and marital therapy** dapat membantu anggota keluarga dan pasangan menemukan cara produktif untuk menangani perilaku yang mengganggu, mendorong perubahan perilaku, dan memperbaiki interaksi dengan orang yang memiliki ADHD.
 

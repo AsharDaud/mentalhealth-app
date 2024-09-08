@@ -29,41 +29,48 @@ model = joblib.load(model_path)
 
 questions = {
     'anx1': "Dari skala dibawah ini, Seberapa sering anda merasa gugup, gelisah / tegang?",
-    'anx2': "Dari skala di bawah ini, Seberapa sering anda merasa sulit mengendalikan rasa khawatir / kecemasan?",
-    'anx3': "Dari skala di bawah ini, Seberapa sering anda berkeringat dingin / berkeringat berlebihan dan gemetaran?",
-    'anx4': "Dari skala di bawah ini, Seberapa sering anda merasa mengalami detak jantung yang meningkat / bernafas dengan cepat?",
+    'anx2': "Dari skala di bawah ini, Seberapa sering anda sulit mengendalikan rasa khawatir / kecemasan?",
+    'anx3': "Dari skala di bawah ini, Seberapa sering anda berkeringat dingin / berlebihan dan gemetaran?",
+    'anx4': "Dari skala di bawah ini, Seberapa sering anda mengalami detak jantung yang meningkat / bernafas dengan cepat?",
+    'anx5': "Dari skala di bawah ini, seberapa sering anda kesulitan berkonsentrasi atau pikiran menjadi kosong?",
 
     'bpl1': "Dari skala di bawah ini, Seberapa sering anda merasa sangat bahagia, antusias, ataupun terlalu bersemangat?",
-    'bpl2': "Dari skala di bawah ini, Seberapa sering anda merasa sangat percaya diri, penting, berbakat, ataupun kuat?",
-    'bpl3': "Dari skala di bawah ini,  Seberapa sering anda merasa memiliki rasa percaya diri yang berlebihan, harga diri yang melambung ataupun lebih banyak bicara daripada biasanya?",
-    'bpl4': "Dari skala di bawah ini,  Seberapa sering anda merasa sangat sedih, putus asa atau merasa diri sendiri tidak berharga dan merasa bersalah yang berlebihan?",
+    'bpl2': "Dari skala di bawah ini, Seberapa sering anda sangat percaya diri, merasa penting, berbakat, ataupun kuat?",
+    'bpl3': "Dari skala di bawah ini, Seberapa sering anda memiliki harga diri yang melambung ataupun lebih banyak bicara daripada biasanya?",
+    'bpl4': "Dari skala di bawah ini, Seberapa sering anda merasa sangat sedih, putus asa atau merasa diri sendiri tidak berharga dan merasa bersalah yang berlebihan?",
+    'bpl5': "Dari skala di bawah ini, Seberapa sering anda mempunyai pikiran tentang kematian yang berulang (bukan hanya rasa takut akan kematian), ide bunuh diri yang berulang tanpa rencana khusus, upaya bunuh diri, atau rencana khusus untuk bunuh diri.",
 
     'dpr1': "Dari skala di bawah ini, Seberapa sering anda merasa sangat sensitif, mudah marah, tersinggung / frustasi dan cenderung menutup diri dari lingkungan?",
-    'dpr2': "Dari skala di bawah ini, Seberapa sering anda merasa tidak ada ketertarikan, minat / motivasi untuk melakukan apapun dan memiliki suasana hati yang buruk?",
+    'dpr2': "Dari skala di bawah ini, Seberapa sering anda merasa minat atau kesenangan yang sangat berkurang?",
     'dpr3': "Dari skala di bawah ini, Seberapa sering anda merasa putus asa atau pesimis?",
-    'dpr4': "Dari skala di bawah ini, Seberapa sering anda merasa pernah timbul ide untuk menyakiti diri sendiri atau percobaan bunuh diri?",
+    'dpr4': "Dari skala di bawah ini, Seberapa sering Suasana hati anda merasa tertekan?",
+    'dpr5': "Dari skala di bawah ini, Seberapa sering anda merasa pernah timbul ide untuk menyakiti diri sendiri atau percobaan bunuh diri?",
 
-    'eat1': "Dari skala di bawah ini, Seberapa sering anda sering memuntahkan kembali makanan yang telah anda makan?",
-    'eat2': "Dari skala di bawah ini, Seberapa sering anda merasa sering menghindari rasa lapar karena terobsesi kurus?",
-    'eat3': "Dari skala di bawah ini, Seberapa sering anda merasa sering mengonsumsi makanan dalam jumlah banyak, makan dengan sangat cepat dan bahkan tetap makan ketika tidak lapar secara fisik?",
-    'eat4': "Dari skala di bawah ini, Seberapa sering anda sering merasa jijik, depresi, malu, kesal, atau bersalah pada diri sendiri setelah makan?",
+    'eat1': "Dari skala di bawah ini, Seberapa sering anda memuntahkan kembali makanan yang telah anda makan?",
+    'eat2': "Dari skala di bawah ini, Seberapa sering anda menghindari rasa lapar karena terobsesi kurus?",
+    'eat3': "Dari skala di bawah ini, Seberapa sering anda mengonsumsi makanan dalam jumlah banyak dan makan dengan sangat cepat?",
+    'eat4': "Dari skala di bawah ini, Seberapa sering anda merasa jijik, depresi, malu, kesal, atau bersalah pada diri sendiri setelah makan?",
+    'eat5': "Dari skala di bawah ini, Seberapa sering anda merasa ketakutan yang kuat akan kenaikan berat badan atau menjadi gemuk, atau perilaku terus-menerus yang mengganggu kenaikan berat badan, meskipun berat badannya sangat rendah?",
 
-    'ocd1': "Dari skala di bawah ini, Seberapa sering anda merasa sering memeriksa pintu apakah sudah dikunci ataupun mengecek kompor sudah dimatikan secara berkali - kali?",
+    'ocd1': "Dari skala di bawah ini, Seberapa sering anda memeriksa pintu. Apakah sudah dikunci ataupun mengecek kompor sudah dimatikan secara berkali - kali?",
     'ocd2': "Dari skala di bawah ini, Seberapa sering anda merasa stres yang berlebihan saat benda-benda tersusun secara tidak teratur atau tidak menghadap ke arah tertentu / tidak simetris?",
-    'ocd3': "Dari skala di bawah ini, Seberapa sering anda merasa sering menyusun barang-barang agar menghadap ke arah yang sama?",
-    'ocd4': "Dari skala di bawah ini, Seberapa sering anda merasa sering mencuci tangan berkali - kali sampai kulit lecet karena merasa masih kotor?",
+    'ocd3': "Dari skala di bawah ini, Seberapa sering anda mmenyusun atau menata barang dengan cara tertentu dan tepat?",
+    'ocd4': "Dari skala di bawah ini, Seberapa sering anda mencuci tangan berkali - kali sampai kulit lecet karena merasa masih kotor dan takut akan kuman?",
+    'ocd5': "Dari skala di bawah ini, Seberapa sering anda takut lupa, kehilangan, atau salah menaruh sesuatu?",
 
-    'ptsd1': "Dari skala di bawah ini, Seberapa sering anda merasa sering munculnya ingatan pada peristiwa traumatis?",
-    'ptsd2': "Dari skala di bawah ini, Seberapa sering anda cenderung menghindari tempat atau hal-hal yang berkaitan dengan kejadian traumatis?",
-    'ptsd3': "Dari skala di bawah ini, Seberapa sering anda merasa sering bermimpi buruk yang berkaitan dengan kejadian traumatis tersebut?",
-    'ptsd4': "Dari skala di bawah ini, Seberapa sering anda merasa  mudah terkejut, takut atau mengalami keadaan emosional negatif yang terus-menerus?",
+    'ptsd1': "Dari skala di bawah ini, Seberapa sering anda mengalami munculnya ingatan pada peristiwa traumatis?",
+    'ptsd2': "Dari skala di bawah ini, Seberapa sering anda menghindari tempat atau hal-hal yang berkaitan dengan kejadian traumatis?",
+    'ptsd3': "Dari skala di bawah ini, Seberapa sering anda bermimpi buruk yang berkaitan dengan kejadian traumatis tersebut?",
+    'ptsd4': "Dari skala di bawah ini, Seberapa sering anda merasa mudah terkejut, takut atau mengalami keadaan emosional negatif yang terus-menerus?",
+    'ptsd5': "Dari skala di bawah ini, Seberapa sering anda merasa mempuyai tingkat kewaspadaan yang berlebihan?",
 
-    'skizo1': "Dari skala di bawah ini, Seberapa sering anda pernah merasa berhalusinasi, sering kali berbentuk bayangan atau suara-suara yang tidak nyata?",
-    'skizo2': "Dari skala di bawah ini, Seberapa sering anda pernah merasa mengalami Delusi, contohnya menganggap bahwa dirinya sedang dikejar-kejar orang atau organisasi tertentu?",
-    'skizo3': "Dari skala di bawah ini, Seberapa sering anda merasa mengalami perubahan perilaku dan cara bicara menjadi tidak teratur (meracau)?",
-    'skizo4': "Dari skala di bawah ini, Seberapa sering anda merasa Kurangnya emosi atau ekspresi (tidak melakukan kontak mata, tidak mengubah ekspresi wajah atau berbicara dengan nada monoton)?",
+    'adhd1': "Dari skala di bawah ini, Seberapa sering anda mengalami kesulitan dalam mempertahankan perhatian pada tugas atau aktivitas tertentu (misalnya, kesulitan tetap fokus selama kuliah, percakapan, atau membaca panjang)?",
+    'adhd2': "Dari skala di bawah ini, Seberapa sering anda tampak tidak mendengarkan saat diajak berbicara langsung (misalnya, pikirannya tampak kemana-mana, bahkan tanpa gangguan yang jelas)?",
+    'adhd3': "Dari skala di bawah ini, Seberapa sering anda gelisah dengan tangan atau kaki saat duduk, atau bergerak-gerak di tempat duduknya?",
+    'adhd4': "Dari skala di bawah ini, Seberapa sering anda kesulitan menunggu giliran (misalnya, saat menunggu dalam antrean)?",
+    'adhd5': "Dari skala di bawah ini, Seberapa sering anda menginterupsi atau mengganggu orang lain, misalnya dalam percakapan, permainan, atau kegiatan?",
 
-}
+    }
 
 if 'responses' not in st.session_state:
     st.session_state.responses = {key: 1 for key in questions}
@@ -122,13 +129,13 @@ def predict_mental_health(responses, model):
 def identify_mental_health(responses):
     # Define the mapping of questions to mental health conditions
     conditions = {
-        "Anxiety": ["anx1", "anx2", "anx3", "anx4"],
-        "Bipolar": ["bpl1", "bpl2", "bpl3", "bpl4", "dpr4"],
-        "Depresi": ["bpl4","dpr1", "dpr2", "dpr3", "dpr4"],
-        "Eating Disorder": ["eat1", "eat2", "eat3", "eat4"],
-        "OCD": ["ocd1", "ocd2", "ocd3", "ocd4"],
-        "PTSD": ["ptsd1", "ptsd2", "ptsd3", "ptsd4"],
-        "Skizophrenia": ["skizo1", "skizo2", "skizo3", "skizo4"]
+        "Anxiety": ["anx1", "anx2", "anx3", "anx4", "anx5"],
+        "Bipolar": ["bpl1", "bpl2", "bpl3", "bpl4", "bpl5","dpr1", "dpr2", "dpr3", "dpr4", "dpr5"],
+        "Depresi": ["bpl4", "bpl5", "dpr1", "dpr2", "dpr3", "dpr4", "dpr5"],
+        "Eating Disorder": ["eat1", "eat2", "eat3", "eat4", "eat5"],
+        "OCD": ["ocd1", "ocd2", "ocd3", "ocd4", "ocd5"],
+        "PTSD": ["ptsd1", "ptsd2", "ptsd3", "ptsd4", "ptsd5"],
+        "ADHD": ["adhd1", "adhd2", "adhd3", "adhd4", "adhd5"]
     }
 
     scores = {condition: 0 for condition in conditions}

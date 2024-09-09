@@ -8,7 +8,7 @@ st.set_page_config(
 st.title("About Mental Health")
 st.caption("Menjelaskan tentang beberapa penyakit mental yang dipilih, dikarenakan cakupan penyakit mental cukup luas kami memilih beberapa penyakit mental yang lumayan umum diderita oleh masyarakat. Dan kami merangkum dari berbagai sumber terkait untuk mendapatkan data dan informasi yang terpercaya.")
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["Anxiety", "Bipolar", "Depresi", "Eating Disorder", "OCD", "PTSD", "Skizophrenia"])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["Anxiety", "Bipolar", "Depresi", "Eating Disorder", "OCD", "PTSD", "ADHD"])
 
 with tab1:
    st.header("	:one: Anxiety")
@@ -627,59 +627,54 @@ with tab6:
          """)
 
 with tab7:
-   st.header("	:seven: Skizophrenia")
-   st.write("_Skizofrenia_ adalah gangguan mental berat yang dapat memengaruhi tingkah laku, emosi, dan komunikasi. Penderita _skizofrenia_ bisa mengalami halusinasi, delusi, kekacauan berpikir, dan perubahan perilaku.")
-   st.subheader("Berbagai Gejala Skizophrenia")
-   st.markdown("#### Gejala Negatif")
+   st.header("	:seven: ADHD (Attention-deficit/hyperactivity disorder)")
+   st.markdown(""" 
+               _Attention-deficit / hyperactivity disorder_ atau _ADHD_ ditandai oleh pola terus-menerus dari kurangnya perhatian dan / atau hiperaktivitas-impulsivitas yang mengganggu fungsi atau perkembangan seseorang. Orang dengan ADHD mengalami pola gejala berikut:
+               - **Inattention / Kurangnya perhatian** berarti seseorang mungkin kesulitan untuk tetap fokus pada tugas, mempertahankan konsentrasi, dan tetap terorganisir. Masalah-masalah ini bukan karena pembangkangan atau kurangnya pemahaman.
+               - **Hyperactivity / Hiperaktivitas** berarti seseorang tampak selalu bergerak, bahkan dalam situasi yang tidak tepat, atau terlalu sering gelisah, mengetuk, atau berbicara. Pada orang dewasa, hiperaktivitas dapat berarti gelisah yang ekstrem atau berbicara terlalu banyak.
+               - **Impulsivity / Impulsivitas**  berarti seseorang mungkin bertindak tanpa berpikir atau kesulitan mengendalikan diri. Impulsivitas juga dapat mencakup keinginan untuk mendapatkan imbalan secara instan atau ketidakmampuan menunda kepuasan. Orang yang impulsif mungkin sering menyela orang lain atau membuat keputusan penting tanpa mempertimbangkan konsekuensi jangka panjang.
+               """)
+   
+   st.subheader("Berbagai Gejala ADHD")
    st.markdown("""
-      - Menurunnya keinginan berbicara dan bersosialisasi.
-      - Menurunnya minat dan motivasi.
-      - Kehilangan beragam emosi yang biasanya dirasakan dan ditampilkan.
-      - Keinginan untuk tetap malas dan lesu serta menolak berubah.
-      - Mengabaikan pada penampilan dan kebersihan diri
-      - Perubahan pada pola tidur
-      - Hilang minat dan motivasi pada berbagai aktivitas
-      - Sulit merasa senang atau puas
-      - Tanggapan emosional yang tidak wajar terhadap suatu situasi
-      - Berkurangnya intensitas berbicara
-      - Kurangnya emosi atau ekspresi (tidak melakukan kontak mata, tidak mengubah ekspresi wajah atau berbicara dengan nada monoton)
-      - Kesulitan menyelesaikan aktivitas normal sehari-hari
+               Beberapa orang dengan ADHD terutama memiliki gejala kurangnya perhatian. Lainnya lebih banyak mengalami gejala hiperaktivitas-impulsivitas. Beberapa orang memiliki kedua jenis gejala tersebut.\n
+               Banyak orang mengalami beberapa tingkat kurangnya perhatian, aktivitas motorik yang tidak terfokus, dan impulsivitas, tetapi bagi orang dengan ADHD, perilaku-perilaku ini:
+               - Lebih parah
+               - Terjadi lebih sering
+               - Mengganggu atau menurunkan kualitas fungsi mereka secara sosial, di sekolah, atau di tempat kerja
+               """)
+   st.markdown("#### Inattention")
+   st.markdown("""
+         Orang dengan gejala kurangnya perhatian mungkin sering:   
+      - Mengabaikan atau melewatkan detail dan membuat kesalahan yang tampak ceroboh dalam pekerjaan sekolah, di tempat kerja, atau selama kegiatan lainnya
+      - Kesulitan mempertahankan perhatian selama bermain atau tugas, seperti percakapan, kuliah, atau membaca panjang
+      - Tampak tidak mendengarkan saat diajak berbicara langsung
+      - Kesulitan mengikuti instruksi atau menyelesaikan pekerjaan sekolah, tugas rumah, atau tanggung jawab di tempat kerja, atau memulai tugas tetapi kehilangan fokus dan mudah teralihkan
+      - Kesulitan mengatur tugas dan kegiatan, melakukan tugas secara berurutan, menjaga barang-barang tetap teratur, mengelola waktu, dan memenuhi tenggat waktu
+      - Menghindari tugas yang memerlukan usaha mental terus-menerus, seperti pekerjaan rumah, atau bagi remaja dan orang dewasa, mempersiapkan laporan, mengisi formulir, atau meninjau dokumen panjang
+      - Sering kehilangan barang yang diperlukan untuk tugas atau kegiatan, seperti perlengkapan sekolah, pensil, buku, alat, dompet, kunci, dokumen, kacamata, dan ponsel
+      - Mudah teralihkan oleh pikiran atau rangsangan yang tidak terkait
+      - Lupa melakukan kegiatan sehari-hari, seperti tugas rumah, belanja, mengembalikan panggilan, dan membuat janji
                """)
 
-   st.markdown("#### Gejala Positif")
+   st.markdown("#### Hyperactivity-impulsivity")
    st.markdown("""
-      - Halusinasi, sering kali berbentuk bayangan atau suara-suara yang tidak nyata.
-      - Delusi, contohnya menganggap bahwa dirinya sedang dikejar-kejar orang atau organisasi tertentu.
-      - Paranoia, ketika seseorang sangat tidak percaya pada orang lain atau sangat yakin bahwa mereka sedang diikuti atau dianiaya.
-      - Perubahan perilaku dan cara bicara menjadi tidak teratur (meracau).
-      - Kekacauan dalam berperilaku, seperti berteriak secra tiba" dan marah tanpa alasan
-               """)
-
-   st.markdown("#### Gejala Kognitif")
-   st.markdown("""
-     - Kesulitan berkonsentrasi, berfikir dan sulit fokus
-     - Menurunnya fungsi memori.
-     - Kesulitan dalam menerima dan memahami sinyal atau tanda-tanda dalam hubungan dengan orang lain.
-     - Menurunnya kemampuan untuk mengatur dan cenderung berpikir abstrak.
-     - Pemikiran yang tidak teratur, seperti kesulitan memperhatikan
-               """)
-
-   st.subheader("Penyebab Skizophrenia")
-   st.markdown("""
-   Berikut adalah beberapa penyebab atau pemicu yang memungkinkan timbulnya PTSD :
-      - Faktor Genetik dan Lingkungan
-      - Perbedaan Struktur Otak
-      - Ketidakseimbangan Kimia di Otak
-      - Penggunaan Obat Tertentu
-      - Komplikasi kehamilan dan persalinan
+      Orang dengan gejala hiperaktivitas-impulsivitas mungkin sering:
+      - Gelisah dan menggeliat saat duduk
+      - Meninggalkan tempat duduk dalam situasi di mana diharapkan untuk tetap duduk, seperti di kelas atau kantor
+      - Berlari, bergerak cepat, atau memanjat di waktu yang tidak tepat, atau pada remaja dan orang dewasa, sering merasa gelisah
+      - Tidak bisa bermain atau terlibat dalam hobi dengan tenang
+      - Selalu bergerak atau terus berjalan, atau bertindak seolah-olah digerakkan oleh motor
+      - Berbicara secara berlebihan
+      - Menjawab pertanyaan sebelum selesai diajukan, menyelesaikan kalimat orang lain, atau berbicara tanpa menunggu giliran dalam percakapan
+      - Kesulitan menunggu giliran
+      - Menyela atau mengganggu orang lain, misalnya dalam percakapan, permainan, atau aktivitas
                """)
 
    st.subheader("Pengobatan Skizophrenia")
    st.markdown("""
       - Obat medis
       - Psikoterapi
-      - Terapi elektrokonvulsi
-      - Transcranial magnetic stimulation (TMS)
                """)
    
 

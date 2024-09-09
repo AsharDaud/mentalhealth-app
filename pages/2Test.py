@@ -363,9 +363,9 @@ if identify_button:
                         elif condition == "ADHD":
                             st.markdown("""
                             **Attention-deficit/hyperactivity disorder (ADHD)** atau gangguan pemusatan perhatian/hiperaktivitas ditandai oleh pola terus-menerus dari kurangnya perhatian dan/atau hiperaktivitas-impulsivitas yang mengganggu fungsi atau perkembangan seseorang. Orang dengan ADHD mengalami pola gejala berikut:
-                                - **Inattention / Kurangnya perhatian** berarti seseorang mungkin kesulitan untuk tetap fokus pada tugas, mempertahankan konsentrasi, dan tetap terorganisir. Masalah-masalah ini bukan karena pembangkangan atau kurangnya pemahaman.
-                                - **Hyperactivity / Hiperaktivitas** berarti seseorang tampak selalu bergerak, bahkan dalam situasi yang tidak tepat, atau terlalu sering gelisah, mengetuk, atau berbicara. Pada orang dewasa, hiperaktivitas dapat berarti gelisah yang ekstrem atau berbicara terlalu banyak.
-                                - **Impulsivity / Impulsivitas**  berarti seseorang mungkin bertindak tanpa berpikir atau kesulitan mengendalikan diri. Impulsivitas juga dapat mencakup keinginan untuk mendapatkan imbalan secara instan atau ketidakmampuan menunda kepuasan. Orang yang impulsif mungkin sering menyela orang lain atau membuat keputusan penting tanpa mempertimbangkan konsekuensi jangka panjang.
+                            - **Inattention / Kurangnya perhatian** berarti seseorang mungkin kesulitan untuk tetap fokus pada tugas, mempertahankan konsentrasi, dan tetap terorganisir. Masalah-masalah ini bukan karena pembangkangan atau kurangnya pemahaman.
+                            - **Hyperactivity / Hiperaktivitas** berarti seseorang tampak selalu bergerak, bahkan dalam situasi yang tidak tepat, atau terlalu sering gelisah, mengetuk, atau berbicara. Pada orang dewasa, hiperaktivitas dapat berarti gelisah yang ekstrem atau berbicara terlalu banyak.
+                            - **Impulsivity / Impulsivitas**  berarti seseorang mungkin bertindak tanpa berpikir atau kesulitan mengendalikan diri. Impulsivitas juga dapat mencakup keinginan untuk mendapatkan imbalan secara instan atau ketidakmampuan menunda kepuasan. Orang yang impulsif mungkin sering menyela orang lain atau membuat keputusan penting tanpa mempertimbangkan konsekuensi jangka panjang.
                             """)
                             
                             with st.expander("**Rekomendasi untuk ADHD**", expanded=False):

@@ -678,19 +678,19 @@ with tab7:
                """)
    
 
-   st.divider()
-   c = st.container()
-   c.write("_Referensi :_")
-   c.write("""Alodokter.com.(2023, 17 Januari). _Skizofrenia_. Diakses pada 17 Juni 2024,
-            dari https://www.alodokter.com/skizofrenia
-         """)
-   c.write("""Halodoc.com.(2023)._Skizofrenia_. Diakses pada 17 Juni 2024,
-            dari https://www.halodoc.com/kesehatan/skizofrenia
-          """)
-   c.write("""Siloamhospitals.com.(2024, 21 Mei). _Schizophrenia - Causes, Symptoms, and Treatments_. Diakses pada 17 Juni 2024,
-            dari https://www.siloamhospitals.com/en/informasi-siloam/artikel/skizofrenia-adalah
-          """)
+   # st.divider()
+   # c = st.container()
+   # c.write("_Referensi :_")
+   # c.write("""Alodokter.com.(2023, 17 Januari). _Skizofrenia_. Diakses pada 17 Juni 2024,
+   #          dari https://www.alodokter.com/skizofrenia
+   #       """)
+   # c.write("""Halodoc.com.(2023)._Skizofrenia_. Diakses pada 17 Juni 2024,
+   #          dari https://www.halodoc.com/kesehatan/skizofrenia
+   #        """)
+   # c.write("""Siloamhospitals.com.(2024, 21 Mei). _Schizophrenia - Causes, Symptoms, and Treatments_. Diakses pada 17 Juni 2024,
+   #          dari https://www.siloamhospitals.com/en/informasi-siloam/artikel/skizofrenia-adalah
+   #        """)
    
-   c.write("""National Institute Of Mental Health.(2024, April). _Schizophrenia_. Diakses pada 17 Juni 2024,
-            dari https://www.nimh.nih.gov/health/topics/schizophrenia
-         """)
+   # c.write("""National Institute Of Mental Health.(2024, April). _Schizophrenia_. Diakses pada 17 Juni 2024,
+   #          dari https://www.nimh.nih.gov/health/topics/schizophrenia
+   #       """)

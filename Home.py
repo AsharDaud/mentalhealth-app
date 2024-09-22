@@ -15,9 +15,8 @@ st.title("Home")
 st.divider()
 
 def load_lottiefile(filepath: str):
-    abs_path = os.path.join(os.path.dirname(__file__), filepath)
-    with open(abs_path, "r") as f:
-        return f.read()
+    with open(filepath, "r") as f:
+        return json.load(f)
 
 lottie_animation = load_lottiefile("img/Animation.json")
 

@@ -3,6 +3,7 @@ from datetime import datetime
 import requests
 from streamlit_lottie import st_lottie
 import json
+import os
 
 st.set_page_config(
     page_title="Apllication System",
@@ -14,8 +15,9 @@ st.title("Home")
 st.divider()
 
 def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
+    abs_path = os.path.join(os.path.dirname(__file__), filepath)
+    with open(abs_path, "r") as f:
+        return f.read()
 
 lottie_animation = load_lottiefile("img/animation.json")
 

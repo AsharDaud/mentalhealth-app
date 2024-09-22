@@ -19,7 +19,7 @@ def load_lottiefile(filepath: str):
     with open(abs_path, "r") as f:
         return f.read()
 
-lottie_animation = load_lottiefile("img/animation.json")
+lottie_animation = load_lottiefile("img/Animation.json")
 
 # Display animation
 if lottie_animation:
